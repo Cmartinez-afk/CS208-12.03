@@ -1,0 +1,24 @@
+
+extends layout
+//This code creates a new page that the user will visit
+//when the edit button is clicked and change a task that
+//already exists
+block content
+  h1 Edit Task
+
+  form(method='POST' action='/update')
+    input(type='hidden' name='id' value=todo.id)
+
+    label(for='task') Edit your task:
+
+    input(
+      type='text'
+      name='task'
+      id='task'
+      value=todo.task
+      required
+    )
+
+    button(type='submit') Save Changes
+
+  a(href='/') Cancel

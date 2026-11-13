@@ -1,8 +1,42 @@
+/*imports more fonts*/
+@import url('https://googleapis.com');
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Press Start 2P', monospace;
+  background-color: #29006f;
+  color: rgb(255, 253, 186);
+  text-align: center;
+  /*add glow to text*/
+  text-shadow:
+    0 0 2px #fff,
+    0 0 5px #fff,
+    0 0 15px #00f2ff67,
+    0 0 20px #00f2ff67,
+    0 0 40px #00f2ff67;
 }
-
+ol{
+  list-style-position: inside;
+  text-align: center;
+}
+button{
+  background-color: rgb(255, 253, 186);
+  color: #29006f;
+  border-radius: 15px;
+  /*add glow to button*/
+  box-shadow: 
+    0 0 10px rgb(255, 253, 186),
+    inset 0 0 10px rgb(255, 253, 186);
+}
+input{
+  border-radius: 15px;
+}
 a {
   color: #00B7FF;
 }
+/*shortens line*/
+hr{
+  text-align: center;
+  width: 30%;
+}
+
